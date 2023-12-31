@@ -22,4 +22,6 @@ public class Review {
     private Integer eggScore;
     private Integer diaryScore;
 
+    private ReviewStatus status;
+
 }
