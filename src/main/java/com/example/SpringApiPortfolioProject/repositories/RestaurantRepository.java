@@ -6,7 +6,7 @@ import org.springframework.data.repository.CrudRepository;
 import java.util.List;
 import java.util.Optional;
 
-public interface RestaurantRepoistory extends CrudRepository {
+public interface RestaurantRepository extends CrudRepository {
     Optional<Restaurant> findRestaurantsByNameAndZipCode(String name, String zipCode);
     List<Restaurant> findRestaurantsByZipCodeAndPeanutScoreNotNullOrderByPeanutScore(String zipCode);
 

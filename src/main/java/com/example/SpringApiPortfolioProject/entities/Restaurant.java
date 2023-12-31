@@ -13,7 +13,7 @@ import lombok.Setter;
 public class Restaurant {
     @Id
     @GeneratedValue
-    private Long id;
+    private Long restaurantId;
 
     private String name;
     private String street;
