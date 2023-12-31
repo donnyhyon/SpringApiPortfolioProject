@@ -1,6 +1,5 @@
 package com.example.SpringApiPortfolioProject.entities;
 
-import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
@@ -16,6 +15,13 @@ public class Restaurant {
     @GeneratedValue
     private Long id;
 
-    @Column(name = "NAME")
     private String name;
+    private String street;
+    private String state;
+    private String zipCode;
+
+    private Integer overallScore;
+    private Integer peanutScore;
+    private Integer diaryScore;
+    private Integer eggScore;
 }
